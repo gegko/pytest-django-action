@@ -1,0 +1,9 @@
+# action.yml
+name: 'pytest-django-action'
+description: 'GitHub action to run pytest-django on your Django web app'
+branding:
+  icon: 'check-square'
+  color: 'black'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
