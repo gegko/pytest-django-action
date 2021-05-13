@@ -3,6 +3,7 @@ FROM python:3.7-alpine
 RUN apk update
 RUN apk add gcc
 RUN apk add musl-dev
+RUN apk add openldap-dev
 RUN apk add --no-cache bash
 
 LABEL "com.github.actions.name"="GitHub Action for pytest-django"
