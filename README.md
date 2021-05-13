@@ -21,7 +21,7 @@
           uses: actions/checkout@v2
 
         - name: pytest-django-action
-          uses: samwlms/pytest-django-action@1.1
+          uses: samwlms/pytest-django-action@1.2
           with:
             args: pytest --ds=webapp.settings_prod -o python_files=tests.py
   ```
