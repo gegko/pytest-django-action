@@ -8,6 +8,7 @@ LABEL "com.github.actions.color"="yellow"
 RUN apk add --no-cache bash
 RUN pip install --upgrade pip
 RUN pip install pytest
+RUN pip install Django
 RUN pip install pytest-django
 RUN python --version ; pip --version ; pytest --version
 
