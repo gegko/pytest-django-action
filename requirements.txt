@@ -1,0 +1,10 @@
+
+django-auth-ldap
+django
+djangorestframework
+pytest-django
+pytest
+pyasn1-modules
+pyasn1
+python-ldap
+pytz
