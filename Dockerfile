@@ -10,6 +10,8 @@ RUN pip uninstall telebot
 RUN pip uninstall pyTelegramBotAPI
 RUN pip install pyTelegramBotAPI python-telegram-bot-pagination names telemulator3 pytest pytest-django pytest-mock
 RUN python3 --version ; pip --version ; pytest --version
+RUN python3 manage.py makemigrations
+RUN python3 manage.py migrate --database=test_db
 
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
