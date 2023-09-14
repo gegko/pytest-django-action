@@ -8,7 +8,7 @@ RUN apt-get update -y && apt-get install -y libsasl2-dev python-dev-is-python3 l
 RUN pip install --upgrade pip && pip install -r requirements.txt
 RUN pip uninstall telebot 
 RUN pip uninstall pyTelegramBotAPI
-RUN pip install pyTelegramBotAPI python-telegram-bot-pagination
+RUN pip install pyTelegramBotAPI python-telegram-bot-pagination names
 RUN python3 --version ; pip --version ; pytest --version
 
 RUN chmod +x /entrypoint.sh
